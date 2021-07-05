@@ -1,0 +1,10 @@
+CREATE DATABASE `event_management_system` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+
+CREATE TABLE `feedback` (
+  `feedback_Num` int NOT NULL AUTO_INCREMENT,
+  `Name` varchar(45) NOT NULL,
+  `feedback` varchar(4000) NOT NULL,
+  PRIMARY KEY (`feedback_Num`),
+  UNIQUE KEY `Name_UNIQUE` (`Name`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

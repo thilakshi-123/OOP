@@ -1,0 +1,106 @@
+@charset "ISO-8859-1";
+* {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+/*---------------------------------head---------------------------------*/
+ .header {
+            text-align: center;
+            height: 296px;
+        }
+        
+
+/*navbar*/
+.navbar1 {
+            overflow: none;
+             background: #F0F8FF;
+             position: sticky;
+            position: -webkit-sticky;
+            top: 0; padding-top:25px; padding-bottom:15px;
+            box-shadow: 0 0 15px 0 black;
+        }
+.navbtn {text-decoration: none;
+          background :none;
+            padding: 8px 40px 8px 40px ;
+            font-size: 16px; border-bottom: none; border-right: none; border-top: none;
+             border-left: 3px solid #D3D3D3; border-width: 3px;
+            color:black; font-weight: 500; margin: 10px 0px 10px 0px;
+        }
+
+.hmbtn {text-decoration: none;
+          background :none;
+            padding: 8px 40px 8px 40px ;
+            font-size: 16px;border:none;
+            color:black; font-weight: 500; margin: 10px 0px 10px 0px;
+        }
+
+ .hmbtn:hover, .navbtn:hover {  color:blue; }
+
+  .rightlg {
+            float: right;
+            background :none;
+            padding-right: 20px;
+            font-size: 16px; font-weight: 500;
+            border: none;
+            color: black;text-decoration: none;
+
+        }
+        
+.rightlg:hover , .homebtn:hover{   color:blue; }
+
+
+/*---------------------------------body----------------------------------------*/
+
+
+
+    /*---------------------------------footer---------------------------------*/
+
+footer{     border: 1px solid #333;
+            background: rgb(36, 36, 36);
+            background: linear-gradient(90deg, rgba(36, 36, 36, 1) 0%, rgba(43, 43, 43, 1) 50%, rgba(68, 68, 68, 1) 100%);
+            width: auto;
+            height: 200px;
+            margin-right: auto;
+            margin-left: auto;
+     }         
+
+.list-class{ float: left;
+      list-style: none;
+      padding-left: 100px;
+      }
+
+.list-class a , .addr{ text-decoration: none;
+            text-shadow: 1px 1px 1px black;
+            color: gray; }
+
+.list-class a:hover { color:gold; }
+
+.hdr{       font-size: 20px;
+        font-weight: bold;
+        color:white;
+  }
+
+.app-link{ width: 120px;
+            height: 50px;
+            border-radius: 40px;
+            box-shadow: 0 0 10px 0 black; }
+
+.app-link:hover{ width: 125px;
+            height: 55px; }
+
+
+.follow-link{ width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            padding: 5px; }
+
+.follow-link:hover{   width: 45px;
+            height: 45px;}
+        
+  

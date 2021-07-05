@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>MLB-OOP-2020-S2-G49 -Event Management System</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!--/////////////////////////////Create User Account///////////////////////////////-->
+  <servlet>
+    <servlet-name>CreateUserServlet</servlet-name>
+    <servlet-class>userAccservlets.CreateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateUserServlet</servlet-name>
+    <url-pattern>/createuser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>loginservlet</servlet-name>
+    <servlet-class>userAccservlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/loginservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>updateuserservlet</servlet-name>
+    <servlet-class>userAccservlets.UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateuserservlet</servlet-name>
+    <url-pattern>/updateuser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>deleteuserservlet</servlet-name>
+    <servlet-class>userAccservlets.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteuserservlet</servlet-name>
+    <url-pattern>/deleteuser</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--////////////////////////////Make event order///////////////////////////////-->
+  <servlet>
+    <servlet-name>InsertEventServlet</servlet-name>
+    <servlet-class>orderEventservlets.InsertEventServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertEventServlet</servlet-name>
+    <url-pattern>/inserteventservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateEventServlet</servlet-name>
+    <servlet-class>orderEventservlets.UpdateEventServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateEventServlet</servlet-name>
+    <url-pattern>/updateeventservlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DeleteEventServlet</servlet-name>
+    <servlet-class>orderEventservlets.DeleteEventServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteEventServlet</servlet-name>
+    <url-pattern>/deleteeventservlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>FindEventServlet</servlet-name>
+    <servlet-class>orderEventservlets.FindEventServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindEventServlet</servlet-name>
+    <url-pattern>/findeventservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!--/////////////////////////////payment///////////////////////////////-->
+  
+  <servlet>
+    <servlet-name>insertpaymentservlet</servlet-name>
+    <servlet-class>insertPayServlet.InsertPaymentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertpaymentservlet</servlet-name>
+    <url-pattern>/insertpaymentservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--/////////////////////////////sponsor///////////////////////////////-->
+  
+  <servlet>
+    <servlet-name>createspocervlet</servlet-name>
+    <servlet-class>sponserServlet.CreatespoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createspocervlet</servlet-name>
+    <url-pattern>/createspocervlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deletesponsorshipservlet</servlet-name>
+    <servlet-class>sponserServlet.DeleteSponsorshipServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletesponsorshipservlet</servlet-name>
+    <url-pattern>/deletesponsorshipservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updatesponsorshipservlet</servlet-name>
+    <servlet-class>sponserServlet.UpdateSponsorshipServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updatesponsorshipservlet</servlet-name>
+    <url-pattern>/updatesponsorshipservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>validateservlet</servlet-name>
+    <servlet-class>sponserServlet.ValidateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>validateservlet</servlet-name>
+    <url-pattern>/validateservlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--////////////////////////////feedbach///////////////////////////////-->
+  
+  <servlet>
+    <servlet-name>insertfdservlet</servlet-name>
+    <servlet-class>feedbackServlet.InsertfdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertfdservlet</servlet-name>
+    <url-pattern>/insertfdservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deletefdservlet</servlet-name>
+    <servlet-class>feedbackServlet.DeletefdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletefdservlet</servlet-name>
+    <url-pattern>/deletefdservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>updatefdservlet</servlet-name>
+    <servlet-class>feedbackServlet.UpdatefdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updatefdservlet</servlet-name>
+    <url-pattern>/updatefdservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+</web-app>
